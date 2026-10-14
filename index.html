@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17152e">
+  <meta name="description" content="A tiny, mysterious, slightly dramatic investigation into whether Gandi ladki actually loves you.">
+  <title>LOVE ME NOT — The Case of Gandi Ladki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Nunito:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" data-action="home" aria-label="Go to the beginning">
+      <span class="brand-heart">♥</span> LOVE ME NOT
+    </a>
+    <div class="top-actions">
+      <span id="world-label" class="world-label">COSMIC FILES</span>
+      <button class="icon-button" data-action="cozy" aria-pressed="false" title="Toggle cozy mode">☾</button>
+      <button class="icon-button" data-action="sound" aria-pressed="false" title="Toggle sound">♫</button>
+    </div>
+  </header>
+
+  <div class="progress-wrap" aria-label="Investigation progress">
+    <div id="progress-bar" class="progress-bar"></div>
+  </div>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="case-label">CONFIDENTIAL CASE FILE</div>
+      <h2>Operation:<br><span>Gandi Ladki</span></h2>
+      <p class="sidebar-copy">An extremely serious investigation. Conducted by a very unserious detective.</p>
+      <div class="case-stamp">TOP<br>SECRET ♥</div>
+      <label class="chapter-label" for="chapter-select">JUMP TO A CHAPTER</label>
+      <select id="chapter-select" aria-label="Choose a chapter"></select>
+      <div class="chapter-list" id="chapter-list"></div>
+      <p class="sidebar-foot">24 chapters · 1 suspicious girl · 1 soft-hearted detective</p>
+    </aside>
+
+    <section class="story-area">
+      <div class="mobile-chapter">
+        <label for="mobile-select">CHAPTER</label>
+        <select id="mobile-select" aria-label="Choose a chapter"></select>
+      </div>
+      <div id="chapter-content" tabindex="-1" aria-live="polite"></div>
+      <nav class="story-nav" aria-label="Chapter navigation">
+        <button id="prev-button" class="nav-button secondary-btn" data-action="previous">← Previous</button>
+        <span id="chapter-count">01 / 24</span>
+        <button id="next-button" class="nav-button primary-btn" data-action="next">Next →</button>
+      </nav>
+      <p class="keyboard-hint">TIP: You can also use your keyboard's ← and → keys.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>MADE WITH QUESTIONABLE EVIDENCE & UNQUESTIONABLE AFFECTION</span>
+    <span>© THE VERY SOFT DETECTIVE AGENCY</span>
+  </footer>
+</body>
+</html>
